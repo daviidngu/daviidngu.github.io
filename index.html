@@ -1,8 +1,22 @@
 <!DOCTYPE html>
 <html>
 <body>
-
-<img src="dancing-bear.gif"/>
+<style>
+  @keyframes spinning {
+    from { transform: rotate(0deg) }
+    to { transform: rotate(360deg) }
+    from { transform: rotateY(0deg) }
+    to { transform: rotateY(360deg) }
+  }
+  .spin {
+    animation-name: spinning;
+    animation-duration: 1;
+    animation-iteration-count: infinite;
+    /* linear | ease | ease-in | ease-out | ease-in-out */
+    animation-timing-function: linear;
+  }
+</style>
+<img src="dancing-bear.gif" class="spin">
 
 </body>
 </html>
